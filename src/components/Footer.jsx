@@ -12,7 +12,7 @@ const Footer = () => {
         <div className=" flex flex-col items-center md:items-start">
           <Link to={"/"} className="bold-24 mb-4">
             <h3>
-              Fusion<span className="text-secondary">Mart</span>{" "}
+              Achim<span className="text-secondary">Shop</span>{" "}
             </h3>
           </Link>
           <p className=" text-center md:text-left">

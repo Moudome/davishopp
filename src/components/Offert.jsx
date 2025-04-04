@@ -2,16 +2,24 @@ import React, { useEffect, useState } from "react";
 
 const Offert = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-12-18T00:01:39") - +new Date();
+    const difference = +new Date("2025-04-04T00:01:39") - +new Date();
     let timeLeft = {};
     if (difference > 0) {
       timeLeft = {
-        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2,"0"),
-        hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2,"0"),
+        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
+          2,
+          "0"
+        ),
+        hours: String(
+          Math.floor((difference / (1000 * 60 * 60)) % 24)
+        ).padStart(2, "0"),
 
-        minutes:String( Math.floor((difference / 1000 / 60) % 24)).padStart(2,"0"),
+        minutes: String(Math.floor((difference / 1000 / 60) % 24)).padStart(
+          2,
+          "0"
+        ),
 
-        seconds: String(Math.floor((difference / 1000) % 60)).padStart(2,"0"),
+        seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     } else {
       timeLeft = {

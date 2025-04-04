@@ -4,7 +4,6 @@ import { FaMinus, FaPlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
-
 const Item = ({ product }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
   return (
@@ -16,9 +15,9 @@ const Item = ({ product }) => {
         <img
           src={product.image}
           alt="productImage"
-          height={222}
-          width={222}
-          className=" object-cover h-38"
+          height={200}
+          width={200}
+          className=" object-cover h-30"
         />
       </Link>
       <div className=" p-3 pt-28 bg-primary rounded-xl">

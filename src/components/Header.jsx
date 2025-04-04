@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+
+import logo from "../assets/achim.jpg";
+
 import Navbar from "./Navbar";
 import { MdMenu, MdClose } from "react-icons/md";
 import { GiShoppingBag } from "react-icons/gi";
@@ -28,9 +30,15 @@ const Header = ({ setShowLogin }) => {
       } fixed w-full mx-auto top-0 left-0 right-0 py-4 z-30 transition-all max-padd-container flexBetween`}
     >
       <Link to={"/"}>
-        <img src={logo} alt="logoimg" height={177} width={177} />
+        <img
+          src={logo}
+          alt="logoimg"
+          height={120}
+          width={120}
+          className="rounded-3xl"
+        />
       </Link>
-      <div className="flexBetween gap-x-20">
+      <div className="flexBetween gap-x-8">
         <Navbar
           containerStyles={"hidden md:flex gap-x-5 xl:gap-x-10 medium-15"}
         />
