@@ -33,8 +33,8 @@ const Header = ({ setShowLogin }) => {
         <img
           src={logo}
           alt="logoimg"
-          height={120}
-          width={120}
+          height={70}
+          width={80}
           className="rounded-3xl"
         />
       </Link>

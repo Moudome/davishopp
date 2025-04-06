@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Offert = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-04-04T00:01:39") - +new Date();
+    const difference = +new Date("2025-06-04T00:01:39") - +new Date();
     let timeLeft = {};
     if (difference > 0) {
       timeLeft = {
@@ -43,7 +43,7 @@ const Offert = () => {
     <section className=" max-padd-container bg-banner bg-center bg-cover h-[555px] p-8 rounded-xl my-8  ">
       <div className=" flex items-center flex-col gap-1 mt-40 max-w-xl">
         <h3 className=" uppercase medium-20">Sales Fever</h3>
-        <h2 className=" bold-44 uppercase">20% off everything</h2>
+        <h2 className=" bold-40 uppercase">20% off everything</h2>
         <span className=" italic font-ace">Offer ends in</span>
         <div className="flex gap-x-4 xs:gap-x-7 mt-2">
           <div className=" bg-white p-2 rounded-lg">
